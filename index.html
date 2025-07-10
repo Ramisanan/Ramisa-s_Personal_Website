@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ramisa Anan - AI Engineer & NLP Specialist</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #1a202c; /* Dark background */
+            color: #e2e8f0; /* Light text */
+            line-height: 1.75;
+        }
+        h1, h2, h3 {
+            font-family: 'JetBrains Mono', monospace; /* Coder-like font for headings */
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        .section-title {
+            font-size: 2.5rem; /* Larger text */
+            font-weight: 700; /* font-bold */
+            color: #63b3ed; /* Blue accent for titles */
+            margin-bottom: 2rem;
+            position: relative;
+            padding-bottom: 0.75rem;
+            text-shadow: 0 0 8px rgba(99, 179, 237, 0.5); /* Subtle glow */
+        }
+        .section-title::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 80px;
+            height: 5px;
+            background-color: #63b3ed;
+            border-radius: 3px;
+        }
+        .card {
+            background-color: #2d3748; /* Darker card background */
+            border-radius: 1rem; /* More rounded */
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); /* Stronger shadow */
+            padding: 2.5rem;
+            margin-bottom: 2rem;
+            border: 1px solid rgba(99, 179, 237, 0.2); /* Subtle border */
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.6);
+        }
+        .link-button {
+            display: inline-block;
+            background-color: #4299e1; /* Blue button */
+            color: white;
+            padding: 0.85rem 1.75rem;
+            border-radius: 0.75rem;
+            text-decoration: none;
+            transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+            font-weight: 600;
+            box-shadow: 0 4px 10px rgba(66, 153, 225, 0.4);
+        }
+        .link-button:hover {
+            background-color: #3182ce;
+            transform: translateY(-3px);
+            box-shadow: 0 6px 15px rgba(66, 153, 225, 0.6);
+        }
+        .skill-tag {
+            display: inline-block;
+            background-color: #4a5568; /* Darker tag background */
+            color: #a0aec0; /* Lighter text for tags */
+            padding: 0.5rem 1rem;
+            border-radius: 0.75rem;
+            font-size: 0.95rem;
+            margin-right: 0.75rem;
+            margin-bottom: 0.75rem;
+            border: 1px solid #4299e1; /* Blue border for tags */
+            transition: background-color 0.2s ease, color 0.2s ease;
+        }
+        .skill-tag:hover {
+            background-color: #4299e1; /* Blue on hover */
+            color: white;
+        }
+        .header-nav-link {
+            transition: color 0.3s ease, transform 0.2s ease;
+            position: relative;
+        }
+        .header-nav-link::after {
+            content: '';
+            position: absolute;
+            left: 50%;
+            bottom: -5px;
+            width: 0;
+            height: 2px;
+            background-color: #63b3ed;
+            transition: width 0.3s ease, left 0.3s ease;
+        }
+        .header-nav-link:hover::after {
+            width: 100%;
+            left: 0;
+        }
+        .header-background {
+            background-image: url('https://cms.codeanywhere.com/uploads/aicode_9746aad84c.jpeg'); /* Updated to use the provided URL */
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            overflow: hidden;
+        }
+        .header-background::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.7); /* Dark overlay for text readability */
+            z-index: 1;
+        }
+        .header-content {
+            position: relative;
+            z-index: 2;
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Header Section -->
+    <header class="header-background text-white py-12 shadow-2xl border-b-4 border-blue-700">
+        <div class="container header-content flex flex-col md:flex-row items-center justify-between">
+            <div class="text-center md:text-left mb-8 md:mb-0">
+                <h1 class="text-6xl font-extrabold mb-3 tracking-wide">Ramisa Anan</h1>
+                <p class="text-3xl font-light text-blue-300">AI Engineer & NLP Specialist</p>
+                <p class="text-xl mt-4 max-w-2xl mx-auto md:mx-0">
+                    Crafting intelligent solutions with a passion for human-AI interaction and cutting-edge NLP.
+                </p>
+            </div>
+            <div class="flex flex-wrap justify-center md:justify-end space-x-4 md:space-x-6 text-lg font-medium mt-8 md:mt-0">
+                <a href="#about" class="text-white hover:text-blue-300 header-nav-link">About</a>
+                <a href="#experience" class="text-white hover:text-blue-300 header-nav-link">Experience</a>
+                <a href="#projects" class="text-white hover:text-blue-300 header-nav-link">Projects</a>
+                <a href="#publications" class="text-white hover:text-blue-300 header-nav-link">Publications</a>
+                <a href="#skills" class="text-white hover:text-blue-300 header-nav-link">Skills</a>
+                <a href="#education" class="text-white hover:text-blue-300 header-nav-link">Education</a>
+                <a href="mailto:a.ananramisa@gmail.com" class="text-white hover:text-blue-300 header-nav-link">Contact</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-gray-800">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="card">
+                <p class="text-xl mb-6 text-gray-300">
+                    A dedicated Graduate student in Data Science & Analytics at Florida Atlantic University (4.0 GPA), specializing in Natural Language Processing (NLP) and Explainable AI. My work includes published IEEE papers on sarcasm detection using advanced models like BERT and LIME.
+                </p>
+                <p class="text-xl text-gray-300">
+                    I am driven by a strong interest in AI-assisted education, human-AI interaction, and developing intuitive, interactive learning tools. Proficient in Python, leading AI frameworks, and web-based AI applications (Streamlit, Django), I am eager to contribute to innovative research and development in AI for education and autonomous systems.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="py-20 bg-gray-900">
+        <div class="container">
+            <h2 class="section-title">Experience</h2>
+
+            <!-- Autism After 21, Inc -->
+            <div class="card">
+                <h3 class="text-2xl font-semibold text-blue-300 mb-3">SOAR Data Support Intern</h3>
+                <p class="text-lg text-gray-400 mb-2">Autism After 21, Inc | Boca Raton, FL</p>
+                <p class="text-md text-gray-500 mb-5">Jun 2025 – Present</p>
+                <ul class="list-disc list-inside text-lg text-gray-300 space-y-3">
+                    <li>Supported program delivery for young adults on the autism spectrum, assisting with daily activities, program facilitation, and participant engagement.</li>
+                    <li>Collected and organized data on career assessments and pre-employment skills to inform individualized development plans.</li>
+                    <li>Analyzed career readiness metrics and interest inventories to help participants identify skill-building opportunities.</li>
+                    <li>Assisted in developing post-program reporting using Excel and Google Sheets for data visualization and presentation.</li>
+                    <li>Contributed to training materials on self-determination, independent living, and vocational preparation.</li>
+                </ul>
+            </div>
+
+            <!-- Quantanite -->
+            <div class="card">
+                <h3 class="text-2xl font-semibold text-blue-300 mb-3">Data Analyst</h3>
+                <p class="text-lg text-gray-400 mb-2">Quantanite | Dhaka, Bangladesh</p>
+                <p class="text-md text-gray-500 mb-5">Mar 2023 – Jul 2024</p>
+                <ul class="list-disc list-inside text-lg text-gray-300 space-y-3">
+                    <li>Maintained and updated internal reporting dashboards using Google Looker, ensuring data and interface accuracy aligned with current client performance metrics.</li>
+                    <li>Translated business and client support requirements into data solutions, documenting report specifications and update processes for ongoing use.</li>
+                    <li>Assisted in managing access control and content accuracy across analytics portals, ensuring proper data visibility and alignment with business roles.</li>
+                    <li>Conducted quality assurance audits and data integrity checks that directly informed updates to content displayed across web-based dashboards.</li>
+                    <li>Used SQL and Python to extract, clean, and manage structured data sets that powered reporting interfaces and business review presentations.</li>
+                    <li>Supported documentation efforts for internal and external data usage, clarifying analytical methods and KPIs in client-facing artifacts.</li>
+                    <li>Presented technical insights and web portal performance summaries to non-technical teams, enhancing understanding and actionability of data.</li>
+                    <li>Managed multiple update and maintenance tasks concurrently, demonstrating adaptability and commitment to accuracy under strict timelines.</li>
+                </ul>
+            </div>
+
+            <!-- Exela Technologies -->
+            <div class="card">
+                <h3 class="text-2xl font-semibold text-blue-300 mb-3">Customer Service Associate</h3>
+                <p class="text-lg text-gray-400 mb-2">Exela Technologies | Boca Raton, FL</p>
+                <p class="text-md text-gray-500 mb-5">Oct 2024 – Jun 2025</p>
+                <ul class="list-disc list-inside text-lg text-gray-300 space-y-3">
+                    <li>Oversaw mailroom operations at Florida Atlantic University, ensuring timely, accurate deliveries.</li>
+                    <li>Managed student and faculty inquiries with professionalism and attention to detail.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 bg-gray-800">
+        <div class="container">
+            <h2 class="section-title">Projects</h2>
+
+            <!-- Smart Product Analyzer -->
+            <div class="card">
+                <h3 class="text-2xl font-semibold text-blue-300 mb-3">Smart Product Analyzer <span class="text-sm text-gray-500 ml-2">(AI/ML, NLP)</span></h3>
+                <p class="text-lg text-gray-300 mb-5">Scraped product reviews, stored in PostgreSQL, and performed sentiment analysis using LLMs. Visualized results in a Streamlit dashboard.</p>
+            </div>
+
+            <!-- AI Chef Assistant -->
+            <div class="card">
+                <h3 class="text-2xl font-semibold text-blue-300 mb-3">AI Chef Assistant <span class="text-sm text-gray-500 ml-2">(Generative AI)</span></h3>
+                <p class="text-lg text-gray-300 mb-5">Developed a GenAI assistant that analyzed cookbooks to generate meal plans and grocery lists.</p>
+            </div>
+
+            <!-- Bangla Fake News Detection -->
+            <div class="card">
+                <h3 class="text-2xl font-semibold text-blue-300 mb-3">Bangla Fake News Detection <span class="text-sm text-gray-500 ml-2">(BERT, Explainable AI)</span></h3>
+                <p class="text-lg text-gray-300 mb-5">Built a BERT-based fake news classifier with explainability using LIME for a university research project.</p>
+            </div>
+
+            <!-- Online Clothing Store -->
+            <div class="card">
+                <h3 class="text-2xl font-semibold text-blue-300 mb-3">Online Clothing Store <span class="text-sm text-gray-500 ml-2">(Web Development)</span></h3>
+                <p class="text-lg text-gray-300 mb-5">Created a Django-based e-commerce platform with a responsive frontend using HTML, CSS, JavaScript.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Publications Section -->
+    <section id="publications" class="py-20 bg-gray-900">
+        <div class="container">
+            <h2 class="section-title">Publications</h2>
+
+            <!-- BanglaSarc -->
+            <div class="card">
+                <h3 class="text-2xl font-semibold text-blue-300 mb-3">BanglaSarc: A Dataset for Sarcasm Detection</h3>
+                <p class="text-lg text-gray-300 mb-5">Published in IEEE; developed a Bangla sarcasm dataset for NLP application.</p>
+                <a href="https://ieeexplore.ieee.org/document/10089322" target="_blank" class="link-button">View Publication</a>
+            </div>
+
+            <!-- Interpretable Bangla Sarcasm Detection -->
+            <div class="card">
+                <h3 class="text-2xl font-semibold text-blue-300 mb-3">Interpretable Bangla Sarcasm Detection using BERT and Explainable AI</h3>
+                <p class="text-lg text-gray-300 mb-5">Published in IEEE; built an interpretable sarcasm classifier using BERT and LIME.</p>
+                <a href="https://ieeexplore.ieee.org/document/10099331" target="_blank" class="link-button">View Publication</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-20 bg-gray-800">
+        <div class="container">
+            <h2 class="section-title">Skills</h2>
+            <div class="card flex flex-wrap gap-3">
+                <span class="skill-tag">Python</span>
+                <span class="skill-tag">BERT</span>
+                <span class="skill-tag">LIME</span>
+                <span class="skill-tag">Transformers</span>
+                <span class="skill-tag">Explainable AI</span>
+                <span class="skill-tag">GenAI</span>
+                <span class="skill-tag">Streamlit</span>
+                <span class="skill-tag">Django</span>
+                <span class="skill-tag">HTML</span>
+                <span class="skill-tag">CSS</span>
+                <span class="skill-tag">JavaScript</span>
+                <span class="skill-tag">Git</span>
+                <span class="skill-tag">AWS (EC2, S3)</span>
+                <span class="skill-tag">Power BI</span>
+                <span class="skill-tag">Tableau</span>
+                <span class="skill-tag">Looker</span>
+                <span class="skill-tag">SQL</span>
+                <span class="skill-tag">PostgreSQL</span>
+                <span class="skill-tag">MySQL</span>
+                <span class="skill-tag">asyncio</span>
+                <span class="skill-tag">Playwright</span>
+                <span class="skill-tag">Unix Shell</span>
+                <span class="skill-tag">LaTeX</span>
+                <span class="skill-tag">Markdown</span>
+                <span class="skill-tag">Confluence</span>
+                <span class="skill-tag">Jira</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="py-20 bg-gray-900">
+        <div class="container">
+            <h2 class="section-title">Education</h2>
+
+            <!-- Florida Atlantic University -->
+            <div class="card">
+                <h3 class="text-2xl font-semibold text-blue-300 mb-3">M.S. in Data Science & Analytics</h3>
+                <p class="text-lg text-gray-400 mb-2">Florida Atlantic University</p>
+                <p class="text-md text-gray-500 mb-2">CGPA: 4.00/4.00</p>
+                <p class="text-md text-gray-500 mb-5">Fall 2024 – Spring 2026 | Boca Raton, FL</p>
+            </div>
+
+            <!-- BRAC University -->
+            <div class="card">
+                <h3 class="text-2xl font-semibold text-blue-300 mb-3">B.Sc. in Computer Science & Engineering</h3>
+                <p class="text-lg text-gray-400 mb-2">BRAC University</p>
+                <p class="text-md text-gray-500 mb-2">CGPA: 3.49/4.00</p>
+                <p class="text-md text-gray-500 mb-5">Spring 2018 – Fall 2022 | Dhaka, Bangladesh</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="bg-gray-900 text-gray-400 py-10 border-t-4 border-blue-700">
+        <div class="container text-center">
+            <p>&copy; 2025 Ramisa Anan. All rights reserved.</p>
+            <p class="mt-3">
+                <a href="mailto:a.ananramisa@gmail.com" class="text-blue-400 hover:underline">a.ananramisa@gmail.com</a> 
+            </p>
+        </div>
+    </footer>
+
+</body>
+</html>
